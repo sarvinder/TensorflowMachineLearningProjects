@@ -1,3 +1,5 @@
+##This is Convolutional Neural Network That is Without batch normalization
+
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 import math
