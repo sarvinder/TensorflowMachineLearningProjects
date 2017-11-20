@@ -130,6 +130,3 @@ def test():
     x,y=getbatch(1)
     print(y.shape)
 
-
-if __name__=="__main__":
-    test()
