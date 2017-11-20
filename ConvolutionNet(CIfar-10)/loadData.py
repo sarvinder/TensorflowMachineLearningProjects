@@ -98,10 +98,7 @@ def getbatch(b):
     #Xte, Yte = loadCfar10(os.path.join(ROOT, 'test_batch'))
     return Xtr, one_hot_encoded(Ytr,10)
 
-def gettest():
-    ROOT = './cifar-10-batches-py'
-    Xte, Yte = loadCfar10(os.path.join(ROOT, 'test_batch'))
-    return  Xte, Yte
+
 
 def one_hot_encoded(class_numbers, num_classes=None):
     """
@@ -124,9 +121,5 @@ def one_hot_encoded(class_numbers, num_classes=None):
 
     return np.eye(num_classes, dtype=float)[class_numbers]
 
-def test():
-    #classesNames=load_class_names()
-    #print(classesNames)
-    x,y=getbatch(1)
-    print(y.shape)
+
 
