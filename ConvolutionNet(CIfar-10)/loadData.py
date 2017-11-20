@@ -121,5 +121,10 @@ def one_hot_encoded(class_numbers, num_classes=None):
 
     return np.eye(num_classes, dtype=float)[class_numbers]
 
+def gettest():
+    ROOT = './cifar-10-batches-py'
+    Xte, Yte = loadCfar10(os.path.join(ROOT, 'test_batch'))
+    return Xte,Yte
+
 
 
